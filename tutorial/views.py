@@ -7,7 +7,7 @@ from rest_framework import status
 
 
 def index(req, res, next):
-    res.header('X-Total-Count')
+    res.header('X-Total-Count', 'X-Custom-Header')
     next() 
 
 

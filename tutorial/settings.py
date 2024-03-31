@@ -55,12 +55,14 @@ MIDDLEWARE = [
 #     "http://localhost:3000",
 # ]
 
-# CORS_ALLOW_HEADERS = [
-#     'x-custom-header',
-#     # Add other allowed headers as needed
-# ]
+CORS_ALLOW_HEADERS = [
+    'X-Total-Count',
+    'x-Custom-Header',
+    'Access-Control-Allow-Headers'
+    # Add other allowed headers as needed
+]
 
-CORS_EXPOSE_HEADERS = ['X-Total-Count']
+CORS_EXPOSE_HEADERS = ['X-Total-Count', 'X-Custom-Header']
 
 ROOT_URLCONF = 'tutorial.urls'
 
